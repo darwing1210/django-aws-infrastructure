@@ -59,3 +59,10 @@ variable "prod_backend_domain" {
 variable "prod_backend_secret_key" {
   description = "production Django's SECRET_KEY"
 }
+
+# S3
+
+variable "prod_media_bucket" {
+  description = "S3 Bucket for production media files"
+  default = "prod-media-427861343"
+}

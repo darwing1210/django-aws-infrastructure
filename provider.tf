@@ -9,6 +9,12 @@ terraform {
       version = ">= 2.0.0"
     }
   }
+
+  backend "s3" {
+    bucket = "terraform-427861343"
+    key    = "terraform"
+    region = "us-east-2"
+  }
 }
 
 provider "namecheap" {
